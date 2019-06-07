@@ -22,6 +22,7 @@
 	}
 	p {
 		margin: 0.5em 0;
+		text-align: justify;
 	}
 	.caption {
 		margin: 0 0 1em 0;
@@ -70,7 +71,7 @@
 		<article id="main">
 			<header>
 				<h2>Automated Guided Car</h2>
-				<p>Design &amp; Control</p>
+				<p style="text-align: center;">Design &amp; Control</p>
 			</header>
 			<section class="wrapper style5">
 				<div class="inner">
@@ -136,8 +137,9 @@
 						</div>
 						<div class="col-6 col-12-medium">
 							<p><b><i>Mechanical Components</i></b></p>
-							<uld>
-								<li>2 4inch 3D printed wheel hubs &amp; o-rings as wheel tires</li>
+							<ul>
+								<li>1 universal wheel as direction guide wheel</li>
+								<li>2 3-inch 3D printed wheel hubs &amp; o-rings as wheel tires</li>
 								<li>Laser cut Acrylic chassis</li>
 								<li>Bolts and nuts</li>
 							</ul>
@@ -154,14 +156,49 @@
 
 					<hr/>
 					<h3>Methods</h3>
-					<p>It mainly consists of three sections to build the car: chassis construction, onboard circuit design and control program design.</p>
-					<h4>Chassis Construction</h4>
-					<p>
-						
+					<p>It mainly consists of three sections to build the car: Mechanical design, onboard circuit design and control program design.
 					</p>
+					<h4>Mechanical Design</h4>
+					<ul>
+						<li>Wheel</li>
+					</ul>
+					<p>
+						The wheel consists of a 3D printed wheel hub and an o-ring wrapped around as the wheel tire. <br> It can be easily scaled to meet different requirements.
+					</p>
+					<div class="row" >
+						<div class="col-3">
+							<span class="image fit"><img src="images/AGV/WheelHub.png" alt="Hub" /></span>
+							<p class="caption"><br>Hub</p>
+						</div>
+						<div class="col-3">
+							<span class="image fit"><img src="images/AGV/WheelTire.png" alt="Tire" /></span>
+							<p class="caption"><br>Tire</p>
+						</div>
+						<div class="col-5">
+							<span class="image fit"><img src="images/AGV/Multi-size.png" alt="Tire" /></span>
+							<p class="caption">Multi Size Wheels</p>
+						</div>
+					</div>
+
+
+					<ul>
+						<li>Chassis</li>
+					</ul>
+					<div class="row">
+						<div class="col-6">
+							<p>
+								The chassis is based on 2.5D design--Use laser cut to get 2D flat boards and assemble all to construct a 3D chassis. <br><br>
+								The model is shown at the right and the source files can be obtained in the <a href="https://github.com/YingfenYi/YingfenYi_ME433_2018"><b>github repository</b></a>.
+							</p>
+						</div>
+						<div class="col-6">
+							<span class="image fit">
+								<img src="images/AGV/Chassis.png" alt="Chassis Model" />
+							</span>
+						</div>
+					</div>
 
 					<h4>Circuit Design</h4>
-
 					<div class="row">
 						<div class="col-9 col-12-medium">
 							<p>
@@ -218,8 +255,14 @@
 
 					<h4>Software Design</h4>
 					<p>
-						
+						It consists of embedded code written in C on the PIC32 microcontroller and an APP written in Java on the on-board phone served as monitor to locate the center of trajectory.<br>
+						<b>Function code on PIC32</b>
 					</p>
+					<ul>
+						<li>Motor Control</li>
+						<li>SPI commnuication</li>
+					</ul>
+					<p>It includes the </p>
 
 					<hr />
 					<h3>Demo</h3>
@@ -227,9 +270,9 @@
 
 					<div class="row">
 						<div class="col-8 col-12-medium" >
-								<video width="640" height="360" controls muted>
-									<source src="videos/overview.mp4" type="video/mp4" />
-								</video>
+							<video width="640" height="360" controls muted>
+								<source src="videos/overview.mp4" type="video/mp4" />
+							</video>
 						</div>
 						<div class="col-4 col-12-medium" >
 							<span class="image fit"><img src="images/AGv/map.png" alt="" /></span>
