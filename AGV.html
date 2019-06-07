@@ -23,6 +23,21 @@
 	p {
 		margin: 0.5em 0;
 	}
+	.caption {
+		margin: 0 0 1em 0;
+		text-align: center;
+		font-style: italic;
+		font-size: 0.75em;
+	}
+	.image.fit {
+		margin: 0;
+	}
+	img{
+		width:auto;
+		height:auto;
+		max-width:100%;
+		max-height:100%;
+	}
 </style>
 </head>
 <body class="is-preload">
@@ -63,15 +78,12 @@
 					<div class="row">
 						<div class="col-6 col-12-medium">
 							<h3>About the Project</h3>
-
-							<p>Thesis research</p>
-
-
+							<p>The goal of this project is to design and control a car which can follow the marked trajectory on the floor by itself without manual intervention, i.e., to design an AGV (Automated Guided Vehicle). In this project, I can apply all the Mechatronic knowledge I've obtained previously and gain experience for designing a complete, fully-functional product.</p>
 						</div>
 
 						<div class="col-6 col-12-medium">
 							<span class="image fit"><img src="images/AGV/Cover.jpg" alt="" /></span>
-							<p align="center">Assmebled model of the car</p>
+							<p align="center" style="margin: 0">Assmebled model of the car</p>
 						</div>
 					</div>
 
@@ -142,10 +154,85 @@
 
 					<hr/>
 					<h3>Methods</h3>
-					<p></p>
+					<p>It mainly consists of three sections to build the car: chassis construction, onboard circuit design and control program design.</p>
+					<h4>Chassis Construction</h4>
+					<p>
+						
+					</p>
+
+					<h4>Circuit Design</h4>
+
+					<div class="row">
+						<div class="col-9 col-12-medium">
+							<p>
+								I firstly drew a draft diagram for the core circuit and tested it on the breadboard. It's easy to change the layout and components with the breadboard, which makes it optimal for prototyping, but it's also too clumsy for a practical product. Something more compact and robust is needed: PCB, which is widely used in embedded systems. So after finalizing the circuit, I transferred everything to <b>Autodesk EAGLE</b>, a software easy to use for PCB design and free for personal use. <br>
+								To design a PCB, I firstly drew the schematic diagram in EAGLE, and then reorganized and optimized the wires and sockets so that they could be fit into a 2-layer, 5cmx5cm PCB.
+							</p>
+						</div>
+						<!-- <div class="col-1 col-12-medium"></div> -->
+						<div class="col-2 col-12-medium">
+							<span class="image fit"><img src="images/AGV/Breadboard.jpg" alt="Breadboard" /></span>
+							<p class="caption">Breadboard Prototype</p>
+						</div>
+					</div>
 					<div>
 						<span class="image fit"><img src="images/AGV/Schematic.png" alt="" /></span>
-						<p align="center">Assmebled model of the car</p>
+						<p class="caption">Schematic Diagram</p>
+					</div>
+
+					<p>
+						You can also customize your PCB by writing down your name or drawing an icon. :D
+					</p>
+
+					<div class="row" >
+						<div class="col-4">
+							<span class="image fit"><img src="images/AGV/Overall.jpg" alt="" /></span>
+							<p class="caption">Overview</p>
+						</div>
+						<div class="col-4">
+							<span class="image fit"><img src="images/AGV/Top.jpg" alt="" /></span>
+							<p class="caption">TopView</p>
+						</div>
+						<div class="col-4">
+							<span class="image fit"><img src="images/AGV/Bottom.jpg" alt="" /></span>
+							<p class="caption">BottomView</p>
+						</div>
+					</div>
+
+					<p>Then attach other components (resistors, capacitors, etc) to the board and solder together.</p>
+					<div class="row">
+						<div class="col-4" >
+							<span class="image fit"><img src="images/AGV/PCB_assem.jpg" alt=""  /></span>
+							<p class="caption">Overview</p>
+						</div>
+						<div class="col-4">
+							<span class="image fit"><img src="images/AGV/Layer1.jpg" alt="" /></span>
+							<p class="caption">Motor Shield</p>
+						</div>
+						<div class="col-4">
+							<span class="image fit"><img src="images/AGV/Layer2.jpg" alt="" /></span>
+							<p class="caption">Control</p>
+						</div>
+					</div>
+
+
+					<h4>Control Program</h4>
+					<p>
+						
+					</p>
+
+					<hr />
+					<h3>Demo</h3>
+
+					<div class="row">
+						<div class="col-8 col-12-medium" >
+								<video width="640" height="360" controls>
+									<source src="videos/overview.mp4" type="video/mp4" />
+								</video>
+						</div>
+						<div class="col-4 col-12-medium" >
+							<span class="image fit"><img src="images/AGv/map.png" alt="" /></span>
+						</div>
 					</div>
 
 					<hr />
