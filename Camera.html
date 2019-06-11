@@ -6,7 +6,7 @@
 -->
 <html>
 <head>
-	<title>Yingfen Yi - AGV</title>
+	<title>Yingfen Yi - Camera</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -70,21 +70,24 @@
 		<!-- Main -->
 		<article id="main">
 			<header>
-				<h2>Automated Guided Car</h2>
-				<p style="text-align: center;">Design &amp; Control</p>
+				<h2>Wearable Camera</h2>
+				<p style="text-align: center;">Case Design</p>
 			</header>
 			<section class="wrapper style5">
 				<div class="inner">
 
 					<div class="row">
-						<div class="col-6 col-12-medium">
+						<div class="col-8 col-12-medium">
 							<h3>About the Project</h3>
-							<p>The goal of this project is to design and control a car which can follow the marked trajectory on the floor by itself without manual intervention, i.e., to design an AGV (Automated Guided Vehicle). <br><br>
-							In this project, I can apply all the Mechatronic knowledge I've obtained previously and gain experience for designing a complete, fully-functional product.</p>
+							<p>
+								Wearable devices are become more and more popular, and one class of them are designed specifically for health monitoring. <br><br>
+								The present camera focuses on automatic eating detection. As overeating is the primary cause of obesity, it will be helpful for developing behavioral interventions for obesity treatment. <br><br>
+								I derived 3 different types of cases for different application scenarios, among which 2 are indivdual, fully-functional cases: necklace and brooch style, and 1 is accessorial gripper and works together with other components. 
+							</p>
 						</div>
 
-						<div class="col-6 col-12-medium">
-							<span class="image fit"><img src="images/AGV/Cover.jpg" alt="" /></span>
+						<div class="col-4 col-12-medium">
+							<span class="image fit"><img src="images/Camera/Intro.jpg" alt="" /></span>
 							<!-- <p align="center" style="margin: 0">Assmebled model of the car</p> -->
 						</div>
 					</div>
@@ -95,196 +98,232 @@
 					<div class="row">
 						<div class="col-12-medium">
 							<ul>
-								<li>Mechanical Design with <b>Solidworks</b></li>
-								<li>Car Construction with <b>3D Printing</b> &amp; <b>Laser cut</b></li>
-								<li>PCB Design with <b>EAGLE</b></li>
-								<li>Board Wiring</li>
-								<li>Embedded Control in <b>C</b> on <b><a href="https://www.digikey.com/product-detail/en/microchip-technology/PIC32MX250F128B-I-SP/PIC32MX250F128B-I-SP-ND/3046657">PIC32MX250F128B</a></b> with <b>MPLAB</b></li>
-								<li>Android App Development in <b>Java</b> with <b>Android Studio</b></li>
-								<li>Communications via SPI &amp; USB</li>
-								<li>Image Processing</li>
+								<li>Solidworks</li>
+								<li>Human-centered Design (Ergonomics)</li>
+								<li>Prototyping
+									<ul>
+										<li>3D Printing (PLA, Resin)</li>
+										<li>Hand Drilling</li>
+									</li>
+								</li>
 							</ul>
 						</div>
 					</div>
 
 					<hr/>
-					<h3>Hardware Used</h3>
+					<h3>Necklace</h3>
 					<div class="row">
 						<div class="col-6 col-12-medium">
-							<p><b><i>Electronic Components</i></b></p>
-							<ul >
-								<li >Motion Control PCB
-									<ul>
-										<li>1 Microcontroller (<a href="https://www.digikey.com/product-detail/en/microchip-technology/PIC32MX250F128B-I-SP/PIC32MX250F128B-I-SP-ND/3046657">PIC32MX250F128B</a>)</li>
-										<li>2 status LEDs (one for power, one user-configurable)</li>
-										<li>2 push buttons (one for reset, one user-configurable)</li>
-										<li>1 Power switch</li>
-										<li>1 3.3V regulator</li>
-										<li>1 8MHz oscillator</li>
-										<li>Capacitors: 4x0.1uF; 2x10uF</li>
-										<li>Resistors: 2x10kΩ; 2x330Ω</li>
-										<li>USB port, wires and header pins</li>
-									</ul>
-								</li>
-								<li >Motor shield PCB
-									<ul>
-										<li>2 Mosfets (<a href="http://www.irf.com/product-info/datasheets/data/irf3708.pdf">IRF3708</a>)</li>
-										<li>1 0.1 uF capacitor</li>
-										<li>1 battery connector</li>
-										<li>2 flyback diodes</li>
-									</ul>
-								</li>
-							</ul>
+							<p>
+								Similar to a real necklace, this wearable sensor consists of a "pendant" to hold all the electronic components, and a "band" wrapping around the neck to fix the sensor. <br>
+								Wearing around the neck, it can detect the chewing motion of the chin, and predict the motion pattern (eating/non-eating) and what type of food the user eats.
+							</p>
+							<h5>Pendant</h5>
+							<h5>Band</h5>
+							<p>
+								The band currently used is silicone, which is flexible and stretchable, so that the sensor can be fixed relatively stable without stifling the user. The skin-friendly surface makes it optimal for day-long wearing. We also punch holes on the band. The porous structure makes it easy to perspire, so that it can still be comfy during and after exercise. <br><br>
+
+								Two sides of the band are attached with rivet buttons. Rivet buttons are easy to attach and detach. Even an overweight user can operate them at the back of the neck. The colored metal buttons look nice and serve as decoration to some extent.<br><br>
+
+								The band can also be customized with different materials and colors. We have black and red silicone bands, black and brown leather bands, 4 colors rivet buttons at hand to fit different perference. 
+							</p>
 						</div>
 						<div class="col-6 col-12-medium">
-							<p><b><i>Mechanical Components</i></b></p>
-							<ul>
-								<li>1 universal wheel as direction guide wheel</li>
-								<li>2 3-inch 3D printed wheel hubs &amp; o-rings as wheel tires</li>
-								<li>Laser cut Acrylic chassis</li>
-								<li>Bolts and nuts</li>
-							</ul>
-
-							<p><b><i>Others</i></b></p>
-							<ul>
-								<li>1 12V lithium-ion battery</li>
-								<li>2 12V <a href="https://www.aliexpress.com/item/Chihai-Motor-CHR-16G-050-ABHL-DC-6V-12V-7PPR-Encoder-Motor-Reducer-Carbon-brush-Gear/32833392055.html">DC motors</a> with gearbox of ratio 63</li>
-								<li>USB OTG adapter, Micro USB cable</li>
-								<li>Android phone (use <a href="https://www.amazon.com/gp/product/B00HPP3VW2">Moto G Black</a> here)</li>
-							</ul>
+							<span class="image fit"><img src="images/Camera/Necklace.png" alt="Necklace" /></span>
+							<p class="caption">Overview of Necklace</p>
+							<table style="margin: 0">
+								<tr>
+									<th>Case</th>
+									<th colspan="2">Band</th>
+									<th colspan="1">Button (color)</th>
+								</tr>
+								<tr>
+									<td>Black</td>
+									<td rowspan="2" style="vertical-align: middle;">Silicone</td>
+									<td>Black</td>
+									<td>Gold</td>
+								</tr>
+								<tr>
+									<td>Aqua Blue</td>
+									<td>Red</td>
+									<td>Silver</td>
+								</tr>
+								<tr>
+									<td>Clear</td>
+									<td rowspan="2" style="vertical-align: middle;">Leather</td>
+									<td>Black</td>
+									<td>Bronze</td>
+								</tr>
+								<tr>
+									<td>Mint Green</td>
+									<td>Brown</td>
+									<td>Gunmetal</td>
+								</tr>
+							</table>
+							<p class="caption">Color Options for the Necklace</p>
 						</div>
 					</div>
+					<div class="row">
+						<div class="col-6">
+						</div>
+					</div>
+					<p>
+						A pilot survey has been done to understand users' preference before we finalize the primary color scheme and material.
+					</p>
 
 					<hr/>
-					<h3>Methods</h3>
-					<p>It mainly consists of three sections to build the car: Mechanical design, onboard circuit design and control program design.
-					</p>
-					<h4>Mechanical Design</h4>
-					<ul>
-						<li>Wheel</li>
-					</ul>
+					<h3>Brooch</h3>
 					<p>
-						The wheel consists of a 3D printed wheel hub and an o-ring wrapped around as the wheel tire. <br> It can be easily scaled to meet different requirements.
-					</p>
-					<div class="row" >
-						<div class="col-3">
-							<span class="image fit"><img src="images/AGV/WheelHub.png" alt="Hub" /></span>
-							<p class="caption"><br>Hub</p>
-						</div>
-						<div class="col-3">
-							<span class="image fit"><img src="images/AGV/WheelTire.png" alt="Tire" /></span>
-							<p class="caption"><br>Tire</p>
-						</div>
-						<div class="col-5">
-							<span class="image fit"><img src="images/AGV/Multi-size.png" alt="Tire" /></span>
-							<p class="caption">Multi Size Wheels</p>
-						</div>
-					</div>
-
-
-					<ul>
-						<li>Chassis</li>
-					</ul>
-					<div class="row">
-						<div class="col-6">
-							<p>
-								The chassis is based on 2.5D design--Use laser cut to get 2D flat boards and assemble all to construct a 3D chassis. <br><br>
-								The model is shown at the right and the source files can be obtained in the <a href="https://github.com/YingfenYi/YingfenYi_ME433_2018"><b>github repository</b></a>. <br><br>
-								The boards at both sides are designed to look like the head of a cat. You can customize it to design your own chassis!
-							</p>
-						</div>
-						<div class="col-6">
-							<span class="image fit">
-								<img src="images/AGV/Chassis.png" alt="Chassis Model" />
-							</span>
-						</div>
-					</div>
-
-					<h4>Circuit Design</h4>
-					<div class="row">
-						<div class="col-9 col-12-medium">
-							<p>
-								I firstly drew a draft diagram for the core circuit and tested it on the breadboard. It's easy to change the layout and components with the breadboard, which makes it optimal for prototyping, but it's also too clumsy for a practical product. Something more compact and robust is needed: PCB, which is widely used in embedded systems. So after finalizing the circuit, I transferred everything to <b>Autodesk EAGLE</b>, a software easy to use for PCB design and free for personal use. <br><br>
-								To design a PCB, I firstly drew the schematic diagram in EAGLE, and then reorganized and optimized the wires and sockets so that they could be fit into a 2-layer, 5cmx5cm PCB.
-							</p>
-						</div>
-						<!-- <div class="col-1 col-12-medium"></div> -->
-						<div class="col-2 col-12-medium">
-							<span class="image fit"><img src="images/AGV/Breadboard.jpg" alt="Breadboard" /></span>
-							<p class="caption">Breadboard Prototype</p>
-						</div>
-					</div>
-					<div>
-						<span class="image fit"><img src="images/AGV/Schematic.png" alt="" /></span>
-						<p class="caption">Schematic Diagram</p>
-					</div>
-
-					<p>
-						You can also customize your PCB by writing down your name or drawing an icon. :D
+						Intro for GTC
 					</p>
 
-					<div class="row" >
-						<div class="col-4">
-							<span class="image fit"><img src="images/AGV/Overall.jpg" alt="" /></span>
-							<p class="caption">Overview</p>
-						</div>
-						<div class="col-4">
-							<span class="image fit"><img src="images/AGV/Top.jpg" alt="" /></span>
-							<p class="caption">TopView</p>
-						</div>
-						<div class="col-4">
-							<span class="image fit"><img src="images/AGV/Bottom.jpg" alt="" /></span>
-							<p class="caption">BottomView</p>
-						</div>
-					</div>
 
-					<p>Then attach other components (resistors, capacitors, etc) to the board and solder together.</p>
-					<div class="row">
-						<div class="col-4" >
-							<span class="image fit"><img src="images/AGV/PCB_assem.jpg" alt=""  /></span>
-							<p class="caption">Overview</p>
-						</div>
-						<div class="col-4">
-							<span class="image fit"><img src="images/AGV/Layer1.jpg" alt="" /></span>
-							<p class="caption">Motor Shield</p>
-						</div>
-						<div class="col-4">
-							<span class="image fit"><img src="images/AGV/Layer2.jpg" alt="" /></span>
-							<p class="caption">Control</p>
-						</div>
-					</div>
+					<hr/>
+					<h3>Details</h3>
+					<h5>Necklace</h5>
+					<!-- BOM + assemble -->
+					<p style="font-style: italic;">BOM</p>
+					<table>
+						<tr>
+							<th>Category</th>
+							<th>Part #</th>
+							<th>Part Name</th>
+							<th>Vendor</th>
+							<th>Unit Qty</th>
+						</tr>
+						<tr>
+							<td>Materials</td>
+							<td>1</td>
+							<td>Silicone Band</td>
+							<td>B00V95ZUSW, Amazon</td>
+							<td>~50cm, 2 bands can make ~3 necklaces</td>
+						</tr>
+						<tr>
+							<td>Materials</td>
+							<td>2</td>
+							<td>Rivet Button</td>
+							<td>B07BK2PVN1, Amazon</td>
+							<td>5 pairs of buttons</td>
+						</tr>
+						<tr>
+							<td>Materials</td>
+							<td>3</td>
+							<td>Spring Bar</td>
+							<td>B01C27A45O, Amazon</td>
+							<td>2 bars</td>
+						</tr>
+						<tr>
+							<td>Materials</td>
+							<td>4</td>
+							<td>M1.2x4 Flat Head Screw</td>
+							<td>91430A154, McMaster</td>
+							<td>2 screws</td>
+						</tr>
+						<tr>
+							<td>Materials</td>
+							<td>5</td>
+							<td>3D Printed Case</td>
+							<td>/</td>
+							<td>1 Set</td>
+						</tr>
+						<tr>
+							<td>Tools</td>
+							<td>6</td>
+							<td>Leather Puncher</td>
+							<td>B06XRDBGY6, Amazon</td>
+							<td>Optional</td>
+						</tr>
+						<tr>
+							<td>Tools</td>
+							<td>7</td>
+							<td>Mini Screw Driver</td>
+							<td>B074N4YH8Q, Amazon</td>
+							<td>Optional</td>
+						</tr>
+					</table>
 
+					<h5>Brooch</h5>
+					<!-- BOM + assemble -->
+					<p style="font-style: italic;">BOM</p>
+					<table>
+						<tr>
+							<th>Category</th>
+							<th>Part #</th>
+							<th>Part Name</th>
+							<th>Vendor</th>
+							<th>Unit Qty</th>
+						</tr>
+						<tr>
+							<td>Materials</td>
+							<td>1</td>
+							<td>M1.6x6 Flat Head Screw</td>
+							<td>91430A159, McMaster</td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td>Materials</td>
+							<td>2</td>
+							<td>M3x8 Hex Screw</td>
+							<td>93070a064, McMaster</td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td>Materials</td>
+							<td>3</td>
+							<td>M3x6 Flat Head Screw</td>
+							<td>91430A116, McMaster</td>
+							<td>4</td>
+						</tr>
+						<tr>
+							<td>Materials</td>
+							<td>4</td>
+							<td>M3 Nut</td>
+							<td>90591A250, McMaster</td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td>Materials</td>
+							<td>5</td>
+							<td>M3 Nut</td>
+							<td>90591A250, McMaster</td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td>Materials</td>
+							<td>6</td>
+							<td>3D Printed Case</td>
+							<td>/</td>
+							<td>1 Set</td>
+						</tr>
+						<tr>
+							<td>Materials</td>
+							<td>7</td>
+							<td>Lanyard</td>
+							<td>B01F86XBP6, Amazon</td>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td>Tools</td>
+							<td>8</td>
+							<td>Flat Screw Driver Set</td>
+							<td>B074N4YH8Q, Amazon</td>
+							<td>Optional</td>
+						</tr>
+						<tr>
+							<td>Tools</td>
+							<td>9</td>
+							<td>Hex Key Set</td>
+							<td>B07DQN87J2, Amazon</td>
+							<td>Optional</td>
+						</tr>
+					</table>
 
-					<h4>Software Design</h4>
-					<p>
-						It consists of embedded code written in C on the PIC32 microcontroller and an APP written in Java on the on-board phone served as monitor to locate the center of trajectory.<br>
-						<b>Function code on PIC32</b>
-					</p>
-					<ul>
-						<li>Motor Control</li>
-						<li>SPI commnuication</li>
-					</ul>
-					<p>It includes the </p>
-
-					<hr />
-					<h3>Demo</h3>
-					<p>A demo video to show how the car follows the trajectory is displayed below at the right. The map used is shown at the left. The gap between two ends of the line should have connected with an arch bridge, which has been moved away when recording the video.</p>
-
-					<div class="row">
-						<div class="col-8 col-12-medium" >
-							<video width="640" height="360" controls muted>
-								<source src="videos/overview.mp4" type="video/mp4" />
-							</video>
-						</div>
-						<div class="col-4 col-12-medium" >
-							<span class="image fit"><img src="images/AGV/map.png" alt="map" /></span>
-						</div>
-					</div>
 
 					<hr />
 					<h3>Learn More</h3>
-
-					<p>It's the final project for <b><a href="https://www.mccormick.northwestern.edu/mechanical/courses/descriptions/433-advanced-mechatronics.html">ME433: Advanced Mechatronics</a></b> at Northwestern University. Refer to the repository on <b><a href="https://github.com/YingfenYi/YingfenYi_ME433_2018">Github</a></b> for the code and other assignments in this course.</p>
+					<p>
+						This work was completed in collaboration with <b><a href="http://www.nalshurafa.com/">HABits Lab</a></b>, whose research focuses on mobile health systems and behavior analysis, and <a href="http://kamoamoa.eecs.northwestern.edu/"><b>Ka Moamoa Lab</b></a>, whose research focuses on energy harvesting systems. Visit their homepages for more information.
+					</p>
 
 				</div>
 			</section>
