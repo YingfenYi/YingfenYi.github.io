@@ -30,6 +30,11 @@
 		font-style: italic;
 		font-size: 0.75em;
 	}
+	.comment {
+		color: #A9A9A9;
+		font-size: 0.75em;
+		font-style: italic;
+	}
 	.image.fit {
 		margin: 0;
 	}
@@ -77,13 +82,20 @@
 				<div class="inner">
 
 					<div class="row">
-						<div class="col-6 col-12-medium">
+						<div class="col-12">
 							<h3>About the Project</h3>
-							<p>In this project, I learned about the kinetic properties of KUKA youBot, a 5-DOF serial manipulation arm with omnidirectional mobile platform. Based on its workspace and the desired motion of the end effector, I applied PI velocity control, generated reference trajectory and conducted simulation on V-REP, an virtual experimentation platform for robots.</p>
-						</div>
-
-						<div class="col-6 col-12-medium">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/YaVYAfL2QMs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<p>
+								<span class="image right"><img src="images/MassaBot/MassaBot.jpg" alt="" /></span>
+								Massage therapy relieves pain and stress and helps people relax their muscles after day-long working, which is a far better alternative to prescription drugs or surgery on early treatment. But it does not work for everyone for multiple reasons:
+								<ul >
+									<li>Price<br>It's too expensive for long-term therapy. Not everyone can aford it.</li>
+									<li>Schedule<br>Some people may be too busy to make an appointment in the daytime, and usually people just need it at night after work.</li>
+									<li>Privacy<br>Due to privacy concerns, some people may fell unsafe to be naked with a stranger.</li>
+								</ul>
+								<br>
+								Reasons above motivates the research on massage robots. This project is to design a head massage robot applying massage therpy on people's head, so that people can enjoy head massage at home anytime they want. <br>
+							</p>
+							<p class="comment">Ref: <a href="https://massagerobotics.com/naked-are-you-safer-with-a-stranger-or-a-robot/">MassageRobotics</a></p>
 						</div>
 					</div>
 
@@ -91,14 +103,20 @@
 
 					<h3 align="left">Skills Involved</h3>
 					<div class="row">
-						<div class="col-12-medium">
+						<div class="col-6 col-12-medium">
 							<ul>
 								<li>MATLAB</li>
-								<li>Kinematic Analysis for <a href="http://www.youbot-store.com/wiki/index.php/Main_Page"><b>KUKA youBot</b></a></li>
-								<li>Workspace Calculation</li>
-								<li>Trajectory Generation</li>
-								<li>Motion Control</li>
-								<li>Simulation on <a href="http://www.coppeliarobotics.com/"><b>V-REP</b></a></li>
+								<li>Kinetic Analysis</li>
+								<li>Workspace Configuration</li>
+								<li>Parameter Optimization</li>
+								<li>Genetic Algorithm (<a href="https://en.wikipedia.org/wiki/Genetic_algorithm">GA</a>)</li>
+							</ul>
+						</div>	
+						<div class="col-6 col-12-medium">
+							<ul>
+								<li>Solidworks</li>
+								<li>Human-centered Design (Ergonomics)</li>
+								<li>UG-NX</li>
 							</ul>
 						</div>
 					</div>
@@ -107,7 +125,7 @@
 					<hr />
 					<h3>Learn More</h3>
 
-					<p>It's the final project for <b><a href="http://hades.mech.northwestern.edu/index.php/ME_449_Robotic_Manipulation">ME449: Robotic Manipulation</a></b> at Northwestern University. The course is also available on <a href="https://www.coursera.org/specializations/modernrobotics"><b>Coursera</b></a>.</p>
+					<p>The project was done during my intern at <a href="http://www.xbotpark.com/en/">Xbot Park</a>, a Robotics company. The model will be modified, prototyped and hopefully, will be available on the market in the future.</p>
 
 				</div>
 			</section>
